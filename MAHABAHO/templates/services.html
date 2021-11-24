@@ -1,0 +1,372 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--================ Start Banner Area =================-->
+<section class="banner_area">
+	<div class="banner_inner d-flex align-items-center">
+		<div class="container">
+			<div class="banner_content text-center">
+				<h2>Our Services</h2>
+				<div class="page_link">
+					<a href="{% url 'home' %}">Home</a>
+					<a href="{% url 'service' %}">Services</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Banner Area =================-->
+
+
+<br><br>
+
+
+<!--================ Start Features Area =================-->
+<section class="services_area">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="main_title">
+					<p class="top_text">Our Service <span></span></p>
+					<center>
+						<h2>What Service We Offer For You </h2>
+						<h5>Whether you’re just getting started with digital marketing or have been doing it for years,
+							our services
+							are designed to meet all your goals.</h7>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="{% static 'img/services/s1.png' %}" alt="">
+					<a href="{% url 'web_dev'  %}">
+						<h4>Website Development</h4>
+					</a>
+					<p>We at Lapaas build responsive and SEO friendly website. Our design services not only help you in
+						stand out
+						from the crowd but also help you in increasing your ROI. We make sure to create a unique and
+						striking
+						website for your business.
+					</p>
+					<a href="{% url 'web_dev'  %}" class="primary_btn2 mt-35">Learn More</a>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="{% static 'img/services/s3.png' %}" alt="">
+					<a href="{% url 'app_dev'  %}">
+						<h4>App Developing</h4>
+					</a>
+					<p>Developing a mobile app for your business can be broadly split into two basic categories - Mobile
+						App
+						Design and Development. Our top-notch developers focus on your specifications and requirements
+						and offer the
+						most personalized mobile app solutions.</p>
+					<a href="{% url 'app_dev'  %}" class="primary_btn2 mt-35">Learn More</a>
+				</div>
+			</div>
+
+
+
+
+			<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+				<div class="service_item">
+					<img src="{% static 'img/services/s2.png' %}" alt="">
+					<a href="{% url 'soc_med_mar'  %}">
+						<h4>Social Media Marketing</h4>
+					</a>
+					<p>Want to increase brand awareness? Social media marketing is one of the best ways to humanize your
+						brand .
+						Lapaas can help you grow your social media presence and increase website traffic and brand
+						awarness.</p>
+					<a href="{% url 'soc_med_mar'  %}" class="primary_btn2 mt-35">Learn More</a>
+				</div>
+			</div>
+
+
+
+
+			<!---<div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+		  <div class="service_item">
+			<img src="{% static 'img/services/s3.png' %}" alt="">
+			<h4>WP Developing</h4>
+			<p>Fruit saw for brought fish forth had ave is man a that their Two he is dominion evening their Fruit saw for
+			  brought fish forth</p>
+			<a href="#" class="primary_btn2 mt-35">Learn More</a>
+		  </div>
+		</div>---->
+
+		</div>
+
+
+
+
+	</div>
+</section>
+<!--================ End Features Area =================-->
+
+<!--================ Start Testimonial Area =================-->
+<section class="testimonial_area pb-xl-300px">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">`
+		  <div class="main_title">
+			<p class="top_text">Our Tesitmonial <span></span></p>
+			<h2>Honourable Client Says <br>
+			  About Me </h2>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="owl-carousel owl-theme testimonial-slider ">
+  
+		<div class="testimonial-item">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="testi-img mb-4 mb-lg-0">
+				<img src="{% static 'img/testimonials/testimonial1.jpg' %}" alt="">
+			  </div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="testi-right">
+				<h4>Sunita Sharma</h4>
+				<p><small>BUSINESS OWNER</small></p>
+  
+				<p>I took a website and local seo service from them. They did my work very nicely. I'm totally satisfied
+				  and would recommend you to get all your digital work done from them. Thanks.
+				</p>
+				<ul class="star_rating mt-3">
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="testimonial-item">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="testi-img mb-4 mb-lg-0">
+				<img src="{% static 'img/testimonials/testimonial2.jpg' %}" alt="">
+			  </div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="testi-right">
+				<h4>HARSH SAHU</h4>
+				<p><small>BUSINESS OWNER</small></p>
+  
+				<p>I did my website SEO with them and I must say they helped me really well regarding this. They
+				  understand others' problems very well and they really give you the result at the end.I just wanna to say
+				  if you want your hard earned money to be utilized well then MAHABAHO is the place. </p>
+				<ul class="star_rating mt-3">
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+			  
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="testimonial-item">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="testi-img mb-4 mb-lg-0">
+				<img src="{% static 'img/testimonials/testimonial3.jpg' %}" alt="">
+			  </div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="testi-right">
+				<h4>HARPREET SINGH</h4>
+				<p><small>BUSINESS OWNER</small></p>
+  
+				<p>You can really see the difference when it comes to website design. There are so many designing
+				  companies out there, but MAHABAHO offers the best quality of work without putting a dent in your pocket.
+				</p>
+				<ul class="star_rating mt-3">
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="testimonial-item">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="testi-img mb-4 mb-lg-0">
+				<img src="{% static 'img/testimonials/rock.jpg' %}" alt="">
+			  </div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="testi-right">
+				<h4>Golu Rock</h4>
+				<p><small>Choreography, Youtuber</small></p>
+  
+				<p>Great work by team MAHABAHO, worked efficiently to my project and they took care my work with all the
+				  adjustments needed and I will recommend to all who needed and my new projects if needs i will give it to
+				  them again </p>
+				<ul class="star_rating mt-4">
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		<div class="testimonial-item">
+		  <div class="row">
+			<div class="col-lg-6">
+			  <div class="testi-img mb-4 mb-lg-0">
+				<img src="{% static 'img/testimonials/anshura.jpg' %}" alt="">
+			  </div>
+			</div>
+			<div class="col-lg-6">
+			  <div class="testi-right">
+				<h4>Ansura</h4>
+				<p><small>Youtuber</small></p>
+  
+				<p>I took a website and local seo service from them. They did my work very nicely. I'm totally satisfied
+				  and would recommend you to get all your digital work done from them. Thanks.</p>
+				<ul class="star_rating mt-3">
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li><span><i class="fas fa-star"></i></span></li>
+				  <li class="disable"><span><i class="fas fa-star"></i></span></li>
+				</ul>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+  
+  
+	  </div>
+	</div>
+  </section>
+  <!--================ End Testimonial Area =================-->
+
+
+
+
+<!--================ Start Portfolio Area =================-->
+<section class="portfolio_area" id="portfolio">
+	<div class="container">
+	  <div class="row">
+		<div class="col-lg-12">
+		  <div class="main_title">
+			<p class="top_text">Our Portfolio <span></span></p>
+			<h2>Check Our Recent <br>
+			  Client Work </h2>
+		  </div>
+		</div>
+	  </div>
+  
+	  <div class="filters portfolio-filter">
+		<ul>
+		  <li class="active" data-filter="*">all</li>
+		  {% for ctg in portfolio_category %}
+		  <li data-filter=".{{ ctg.name }}">{{ ctg.name }}</li>
+		  {% endfor %}
+		</ul>
+	  </div>
+  
+	  <div class="filters-content">
+		<div class="row portfolio-grid">
+		  <div class="grid-sizer col-md-3 col-lg-3"></div>
+		  {% if portfolio %}
+		  {% for portfolio in portfolio %}
+		  <div class="col-lg-6 col-md-6 all {{ portfolio.category }}">
+			<div class="single_portfolio">
+			  <img class="img-fluid w-100" src="{{ portfolio.photo.url }}" alt="">
+			  <div class="overlay"></div>
+			  <div class="short_info">
+				<h4><a href="{% url 'portfolio-details' portfolio.id %}">{{ portfolio.title }}</a></h4>
+				<p>{{ portfolio.portfolio_type }}</p>
+			  </div>
+			</div>
+		  </div>
+		  {% endfor %}
+		  {% else %}
+		  <h2 class="text-danger">Portfolio Not Available!</h2>
+		  {% endif %}
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!--================ End Portfolio Area =================-->
+  
+
+
+
+
+<!--================ Start Brands Area =================-->
+<section class="brands-area section_gap_bottom">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-12">
+				<div class="owl-carousel brand-carousel">
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo1.png' %}" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo2.png' %}" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo3.png' %}" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo4.png' %}" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo5.png' %}" alt="">
+						</div>
+					</div>
+					<!-- single-brand -->
+					<div class="single-brand-item d-table">
+						<div class="d-table-cell">
+							<img src="{% static 'img/brands/logo3.png' %}" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--================ End Brands Area =================-->
+{% endblock %}
